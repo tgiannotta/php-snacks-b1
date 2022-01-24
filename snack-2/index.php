@@ -34,10 +34,10 @@ che name sia più lungo di 3 caratteri, che mail contenga un punto e una chiocci
 <!--     Stampo l'accesso riuscito o negato -->
 <?php
 if($lunghezza_nome > 3 && strpos($mail , '@') && strpos($mail, '.') && is_numeric($eta)){
-    echo 'tutto ok';
+    echo 'Accesso Riuscito';
 }
 else{
-    echo 'hai sbalgiato qualcosa';
+    echo 'Accesso Negato';
 }
 ?>
 
