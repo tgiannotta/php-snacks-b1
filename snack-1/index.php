@@ -77,7 +77,23 @@ Olimpia Milano - Cantù | 55-60 -->
         <?php for($i = 0; $i < count($giornata_15); $i++){ ?>
             <?php $incontri = $giornata_15[$i]; ?>    
             <div> 
-                    <h5><span class="red"> <?php echo $incontri['casa'] ?> </span>  VS <span class="green">  <?php echo $incontri['trasferta'] ?>  </span>| <?php echo $incontri['p-casa'] ?> - <?php echo $incontri['p-tras'] ?></h5>
+                    <h5>
+                        <span class="red">
+                             <?php 
+                             
+                                echo $incontri['casa']
+                             
+                             ?> 
+                        </span>  VS 
+                        <span class="green"> 
+                             <?php 
+                                echo $incontri['trasferta']
+                             ?> 
+                         </span>| 
+                        <?php
+                                 echo $incontri['p-casa'] 
+                        ?> - 
+                        <?php echo $incontri['p-tras'] ?></h5>
             </div>
 
             
